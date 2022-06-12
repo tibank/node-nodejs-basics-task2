@@ -21,7 +21,7 @@ const compress = async (source, target) => {
     .pipe(writeStream)
     .on('error', handleError)
     .on('finish', () => {
-      console.log(`Compress file ${sourceFullName} is done`);
+      console.log(`Compress file ${sourceFullName} is done\n${msgCurrentDir()}`);
     });
 };
 
